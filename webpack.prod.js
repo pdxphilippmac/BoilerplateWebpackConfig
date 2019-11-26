@@ -11,6 +11,12 @@ module.exports = {
         extensions: [".ts", ".tsx"]
     },
     plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'REACT APP',
+            template: './src/index.html'
+        }),
         new Dotenv({
             path: './.env.production',
         }),
@@ -64,15 +70,7 @@ module.exports = {
         publicPath: '/',
         filename: 'bundle.js'
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({
-            title: 'Hello Webpack bundled JavaScript Project',
-            template: './src/index.html'
-        })
 
-    ],
     devServer: {
         contentBase: './dist',
         hot: true

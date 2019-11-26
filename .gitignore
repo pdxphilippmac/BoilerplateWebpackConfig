@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+# dotenv files
+.env.development
+.env.production
+./dist
+/dist

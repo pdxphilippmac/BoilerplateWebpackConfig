@@ -1,2 +1,9 @@
-console.log("Test")
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+const title = 'React with Webpack and Babel';
+ReactDOM.render(
+    <App title={title} />,
+    document.getElementById('app')
+);
+module.hot.accept(App);

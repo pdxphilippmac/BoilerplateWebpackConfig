@@ -1,2 +1,2 @@
 # BoilerplateWebpackConfig
-Base project setup with webpack for future project, boilerplate project.
+Base project setup with webpack for future projects, boilerplate for project.

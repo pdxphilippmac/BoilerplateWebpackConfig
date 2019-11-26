@@ -62,3 +62,5 @@ typings/
 # dotenv files
 .env.development
 .env.production
+./dist
+/dist
